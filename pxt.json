@@ -4,8 +4,7 @@
     "description": "Extension for YahBoom SuperBit V2.0",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "neopixel": "github:lzty634158/pxt-neopixel"
+        "core": "*"
     },
     "files": [
         "README.md",

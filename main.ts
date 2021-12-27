@@ -40,7 +40,6 @@ namespace SuperBit {
     const STP_CHD_H = 1023
 
     let initialized = false
-    let yahStrip: neopixel.Strip;
 
    
     export enum enMusic {
@@ -206,22 +205,6 @@ namespace SuperBit {
         setPwm(index, 0, 0);
         setPwm(index + 1, 0, 0);
     }
-    /**
-     * *****************************************************************
-     * @param index
-     */   
-    //% blockId=SuperBit_RGB_Program block="RGB_Program"
-    //% weight=99
-    //% blockGap=10
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB_Program(): neopixel.Strip {
-         
-        if (!yahStrip) {
-            yahStrip = neopixel.create(DigitalPin.P12, 4, NeoPixelMode.RGB);
-        }
-        return yahStrip;  
-    } 
-    
     //% blockId=SuperBit_Music block="Music|%index"
     //% weight=98
     //% blockGap=10
